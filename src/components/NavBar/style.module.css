@@ -1,0 +1,41 @@
+.navbar {
+  padding: 16px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.navbar__middle-menu {
+  display: flex;
+  font-weight: 700;
+  gap: 2.5rem;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.navbar__corner-menu {
+  display: flex;
+  font-weight: 700;
+  gap: 2.5rem;
+}
+
+.navbar__corner-menu__translation {
+  font-weight: 800;
+  color: #e30613;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 8px;
+}
+
+.navbar__corner-menu__translation option {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 20px;
+  }
+}
