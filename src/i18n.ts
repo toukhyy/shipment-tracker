@@ -40,6 +40,9 @@ i18n
             outForDelivery: 'Out for Delivery',
             delivered: 'Delivered',
           },
+          tableSection: {
+            shipmentDetails: 'Shipment Details',
+          },
         },
       },
       ar: {
@@ -67,6 +70,9 @@ i18n
             processing: 'تم استلام الشحنة من التاجر',
             outForDelivery: 'الشحنة خرجت للتسليم',
             delivered: 'تم التسليم',
+          },
+          tableSection: {
+            shipmentDetails: 'تفاصيل الشحنة',
           },
         },
       },
