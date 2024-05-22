@@ -11,27 +11,29 @@ export function NavBar() {
 
   return (
     <nav className={styles['navbar']} dir={lang === 'en' ? 'ltr' : 'rtl'}>
-      {lang === 'en' ? (
-        <a href="https://bosta.co/ar-EG/home">
-          <BostaEnLogo />
-        </a>
-      ) : (
-        <a href="https://bosta.co/ar-EG/home">
-          <BostaArLogo />
-        </a>
-      )}
+      <div className={styles['navbar__container']}>
+        {lang === 'en' ? (
+          <a href="https://bosta.co/en-eg/home">
+            <BostaEnLogo />
+          </a>
+        ) : (
+          <a href="https://bosta.co/ar-eg/home">
+            <BostaArLogo />
+          </a>
+        )}
 
-      <ul className={styles['navbar__middle-menu']}>
-        <li>{t('navbar.home')}</li>
-        <li>{t('navbar.prices')}</li>
-        <li>{t('navbar.talkToSales')}</li>
-      </ul>
+        <ul className={styles['navbar__middle-menu']}>
+          <li>{t('navbar.home')}</li>
+          <li>{t('navbar.prices')}</li>
+          <li>{t('navbar.talkToSales')}</li>
+        </ul>
 
-      <ul className={styles['navbar__corner-menu']}>
-        <li>{t('navbar.trackShipment')}</li>
-        <li>{t('navbar.signIn')}</li>
-        <LanguageSelector />
-      </ul>
+        <ul className={styles['navbar__corner-menu']}>
+          <li>{t('navbar.trackShipment')}</li>
+          <li>{t('navbar.signIn')}</li>
+          <LanguageSelector />
+        </ul>
+      </div>
     </nav>
   );
 }

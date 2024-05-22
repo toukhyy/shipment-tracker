@@ -1,0 +1,11 @@
+.status--delivered {
+  color: #36b600;
+}
+
+.status--not-yet-shipped {
+  color: #f9ba02;
+}
+
+.status--cancelled {
+  color: #f40105;
+}
