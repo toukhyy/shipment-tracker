@@ -1,19 +1,36 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ShipmentDetails } from '@/components/ShipmentDetails';
 import { ShipmentSteps } from '@/components/ShipmentSteps';
-import data from '@/assets/1.json';
 import { SHIPMENT } from '@/types/shipment';
 import { Table, TableRow } from '@/components/Table/Index';
 import { table_en, table_ar } from '@/assets/table-data';
 import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
+import { nanoid } from 'nanoid';
+import Loader from '@/components/Loader/Index';
+import { useParams } from 'react-router-dom';
+import { useGetShipment } from '@/hooks/useGetShipment';
 
 export function ShipmentPage() {
   const {
     t,
     i18n: { language: lang },
   } = useTranslation();
+
   const table = lang == 'en' ? table_en : table_ar;
+
+  const { code } = useParams();
+
+  const { data, isLoading } = useGetShipment(code!);
+
+  if (isLoading) return <Loader />;
+  if (data.status === 'Not Found.')
+    return (
+      <p>
+        Please make sure to use one of the following ids 84043113, 3468570,
+        40106705
+      </p>
+    );
 
   return (
     <main className={styles['container']}>
@@ -23,7 +40,6 @@ export function ShipmentPage() {
         <ShipmentSteps shipment={data as SHIPMENT} />
       </section>
 
-      {/* <ShipmentSteps /> */}
       <section
         dir={lang === 'en' ? 'ltr' : 'rtl'}
         className={styles['shipment-table-section']}
@@ -40,6 +56,7 @@ export function ShipmentPage() {
                     classPrefix={'table-row'}
                     item={event}
                     renderCell={(item: JSX.Element) => item}
+                    key={nanoid()}
                   />
                 );
               })}
