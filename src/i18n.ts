@@ -23,6 +23,23 @@ i18n
             signIn: 'Sign In',
             trackShipment: 'Track Shipment',
           },
+          detailsBar: {
+            shipmentNumber: 'Shipment number',
+            lastUpdate: 'Last update',
+            merchant: 'Merchant',
+            deliveryDate: 'Delivery date',
+            status: {
+              delivered: 'Delivered',
+              cancelled: 'Cancelled',
+              'not-yet-shipped': 'Not Yet Shipped',
+            },
+          },
+          shipmentSteps: {
+            shipmentCreated: 'Shipment created',
+            processing: 'Processing',
+            outForDelivery: 'Out for Delivery',
+            delivered: 'Delivered',
+          },
         },
       },
       ar: {
@@ -33,6 +50,23 @@ i18n
             talkToSales: 'كلم المبيعات',
             signIn: 'تسجيل الدخول',
             trackShipment: 'تتبع شحنتك',
+          },
+          detailsBar: {
+            shipmentNumber: 'رقم الشحنة',
+            lastUpdate: 'اخر تحديث',
+            merchant: 'اسم التاجر',
+            deliveryDate: 'موعد التسليم خلال',
+            status: {
+              delivered: 'تم تسليم الشحنة',
+              cancelled: 'تم الغاء الشحنة',
+              'not-yet-shipped': 'لم يتم تسليم الشحنة',
+            },
+          },
+          shipmentSteps: {
+            shipmentCreated: 'تم انشاء الشحنة',
+            processing: 'تم استلام الشحنة من التاجر',
+            outForDelivery: 'الشحنة خرجت للتسليم',
+            delivered: 'تم التسليم',
           },
         },
       },

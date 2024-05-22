@@ -1,0 +1,119 @@
+.ant-steps .ant-steps-item-tail {
+  z-index: -1;
+  padding: 1px 0 !important;
+}
+
+.ant-steps .ant-steps-item-tail::after {
+  height: 7px !important;
+}
+
+.ant-steps .ant-steps-item .ant-steps-item-icon .ant-steps-icon {
+  color: white;
+  font-weight: 700;
+}
+
+/* STEP Finish */
+
+.ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: #36b600;
+}
+
+.ant-steps
+  .ant-steps-item-finish
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #36b600;
+  border: none;
+  /* color: white; */
+}
+
+.ant-steps
+  .ant-steps-item-finish
+  .ant-steps-item-container
+  .ant-steps-item-icon
+  .ant-steps-finish-icon {
+  background: #36b600;
+  border: none;
+  /* color: white; */
+}
+
+/* STEP WAIT */
+.ant-steps .ant-steps-item-wait .ant-steps-item-container .ant-steps-item-icon {
+  background: #eeeeee;
+  border: none;
+}
+
+.ant-steps-item-wait
+  + .ant-steps-item
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #eeeeee;
+}
+
+/* STEP PROCESS */
+.ant-steps
+  .ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background: #f9ba02;
+}
+
+.ant-steps
+  .ant-steps-item-process
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #f9ba02;
+  border: none;
+}
+
+.ant-steps-item-active
+  + .ant-steps-item
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #f9ba02;
+}
+
+/* STEP ERROR */
+.ant-steps
+  .ant-steps-item-error
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #f40105;
+  border: none;
+}
+
+.ant-steps
+  .ant-steps-item-error
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background: #f40105;
+}
+
+.ant-steps-item-error
+  + .ant-steps-item
+  .ant-steps-item-container
+  .ant-steps-item-icon {
+  background: #f40105;
+}
+
+/* STEP Label */
+.ant-steps
+  .ant-steps-item
+  .ant-steps-item-container
+  .ant-steps-item-content
+  .ant-steps-item-title {
+  font-weight: 700;
+  font-family: 'Cairo', sans-serif;
+  color: #475569;
+  width: max-content;
+  text-align: center;
+}
+
+.ant-steps {
+  padding: 1.4rem;
+}
+
+/* STEP Label */
