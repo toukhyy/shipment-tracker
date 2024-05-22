@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { ShipmentPage } from './pages/Shipment/Index';
 import './styles/app.css';
@@ -9,6 +9,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path=":code" element={<ShipmentPage />} />
+        <Route path="/" element={<Navigate replace to="/84043113" />} />
       </Routes>
     </>
   );
