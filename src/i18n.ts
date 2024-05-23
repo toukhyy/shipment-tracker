@@ -22,6 +22,10 @@ i18n
             talkToSales: 'Talk to Sales',
             signIn: 'Sign In',
             trackShipment: 'Track Shipment',
+            language: {
+              en: 'عربي',
+              ar: 'English',
+            },
           },
           detailsBar: {
             shipmentNumber: 'Shipment number',
@@ -53,6 +57,10 @@ i18n
             talkToSales: 'كلم المبيعات',
             signIn: 'تسجيل الدخول',
             trackShipment: 'تتبع شحنتك',
+            language: {
+              en: 'عربي',
+              ar: 'English',
+            },
           },
           detailsBar: {
             shipmentNumber: 'رقم الشحنة',

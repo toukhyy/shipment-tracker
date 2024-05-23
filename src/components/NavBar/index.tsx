@@ -39,7 +39,7 @@ export function NavBar() {
 }
 
 function LanguageSelector() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(e.target.value);
@@ -48,14 +48,14 @@ function LanguageSelector() {
 
   return (
     <select
-      defaultValue={i18n.language}
+      value={i18n.language}
       className={styles['navbar__corner-menu__translation']}
       name="language"
       aria-labelledby="select language"
       onChange={handleChange}
     >
-      <option value="en">عربي</option>
-      <option value="ar">ENG</option>
+      <option value="en">{t('navbar.language.en')}</option>
+      <option value="ar">{t('navbar.language.ar')}</option>
     </select>
   );
 }
